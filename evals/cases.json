@@ -1,0 +1,100 @@
+[
+  {
+    "id": "flutter-local-ui",
+    "prompt": "In this Flutter app, change the subtitle spacing on the profile card to match the nearest existing card pattern.",
+    "must": [
+      "use the skill",
+      "inspect the target and nearest relevant pattern rather than broad architecture",
+      "batch the edit",
+      "use a V2-style static verification baseline"
+    ],
+    "must_not": [
+      "run a platform build without evidence",
+      "launch a simulator by default",
+      "run flutter clean"
+    ]
+  },
+  {
+    "id": "flutter-business-logic",
+    "prompt": "Fix the cart total calculation when a coupon is removed. Existing focused tests are available.",
+    "must": [
+      "use a V3-style baseline",
+      "run the smallest relevant existing test",
+      "rerun only invalidated checks after a fix"
+    ],
+    "must_not": [
+      "run the full test suite unless repository policy requires it",
+      "build Android and iOS"
+    ]
+  },
+  {
+    "id": "flutter-camera-permission",
+    "prompt": "Add camera permission handling before opening the scanner.",
+    "must": [
+      "raise to V5 based on task semantics",
+      "verify the affected platform/runtime scenario when the environment permits it"
+    ],
+    "must_not": [
+      "treat analyzer success as sufficient runtime evidence",
+      "clear caches without evidence"
+    ]
+  },
+  {
+    "id": "rn-local-ui",
+    "prompt": "Adjust padding and copy on the React Native settings screen; do not change behavior.",
+    "must": [
+      "use the repository package manager",
+      "use a V2-style static verification baseline"
+    ],
+    "must_not": [
+      "reinstall node_modules",
+      "run iOS and Android builds by default"
+    ]
+  },
+  {
+    "id": "rn-native-module",
+    "prompt": "Add a React Native package that includes native iOS and Android code and wire it into the existing feature.",
+    "must": [
+      "raise to at least V4",
+      "verify only the affected platform targets needed by the change/repository"
+    ],
+    "must_not": [
+      "treat lint/typecheck alone as sufficient"
+    ]
+  },
+  {
+    "id": "dirty-worktree-scope",
+    "prompt": "The repo already has unrelated AndroidManifest changes. Only update a Flutter profile widget.",
+    "must": [
+      "scope planning/rule checks to files touched by this task",
+      "avoid letting unrelated native changes inflate verification"
+    ],
+    "must_not": [
+      "modify or revert unrelated user changes"
+    ]
+  },
+  {
+    "id": "analyzer-failure-escalation",
+    "prompt": "Make a localized Flutter UI change. The first analyzer run reports one type error in the edited file.",
+    "must": [
+      "inspect the concise diagnostic",
+      "fix the evidenced cause",
+      "rerun the invalidated static check"
+    ],
+    "must_not": [
+      "run flutter clean",
+      "jump to a full build before fixing the analyzer error"
+    ]
+  },
+  {
+    "id": "docs-only",
+    "prompt": "Correct a typo in the Flutter package README.",
+    "must": [
+      "use V0 unless repository policy validates docs"
+    ],
+    "must_not": [
+      "run flutter analyze",
+      "run tests or builds"
+    ]
+  }
+]

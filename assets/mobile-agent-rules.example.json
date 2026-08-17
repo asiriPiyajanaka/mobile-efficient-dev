@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "UI-001",
+      "description": "Flutter screens should use the project design-system button rather than raw ElevatedButton.",
+      "severity": "error",
+      "scope": "changed_lines",
+      "paths": [
+        "lib/**/*.dart"
+      ],
+      "exclude_paths": [
+        "lib/design_system/**"
+      ],
+      "categories": [
+        "ui"
+      ],
+      "task_keywords": [
+        "button",
+        "form",
+        "screen",
+        "dialog"
+      ],
+      "references": [
+        "docs/engineering/ui.md"
+      ],
+      "forbid_regex": [
+        "\\bElevatedButton\\s*\\("
+      ]
+    },
+    {
+      "id": "ARCH-001",
+      "description": "Presentation code must not import the data layer directly.",
+      "severity": "error",
+      "scope": "changed_lines",
+      "paths": [
+        "lib/**/presentation/**/*.dart"
+      ],
+      "categories": [
+        "ui",
+        "logic",
+        "navigation"
+      ],
+      "references": [
+        "docs/engineering/architecture.md"
+      ],
+      "forbid_regex": [
+        "^\\s*import\\s+['\\\"][^'\\\"]*/data/"
+      ]
+    },
+    {
+      "id": "RN-UI-001",
+      "description": "React Native feature screens should not create ad-hoc Pressable primitives when the project button component is required.",
+      "severity": "warning",
+      "scope": "changed_lines",
+      "paths": [
+        "src/**/*.{ts,tsx,js,jsx}"
+      ],
+      "exclude_paths": [
+        "src/components/ui/**"
+      ],
+      "categories": [
+        "ui"
+      ],
+      "task_keywords": [
+        "button",
+        "form",
+        "screen"
+      ],
+      "references": [
+        "docs/engineering/ui.md"
+      ],
+      "forbid_regex": [
+        "<Pressable\\b"
+      ]
+    }
+  ]
+}
