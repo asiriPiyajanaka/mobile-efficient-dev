@@ -1,5 +1,5 @@
 interface:
-  display_name: "Mobile Efficient Dev"
+  display_name: "Mobile Development Skills"
   short_description: "Token-aware Flutter and React Native workflow"
   default_prompt: "Use $mobile-development-skills to implement this mobile change with minimum sufficient context and verification."
 policy:

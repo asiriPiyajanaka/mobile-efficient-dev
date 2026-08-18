@@ -7,7 +7,7 @@ metadata:
   version: "0.2.0"
 ---
 
-# Mobile Efficient Development
+# Mobile Development Skills
 
 Optimize for **minimum sufficient work**, not minimum safety.
 
