@@ -1,6 +1,6 @@
-# Example repo guidance for mobile-efficient-dev
+# Example repo guidance for mobile-development-skills
 
-For Flutter and React Native implementation tasks, use the `mobile-efficient-dev` skill when available.
+For Flutter and React Native implementation tasks, use the `mobile-development-skills` skill when available.
 
 Project-specific requirements remain authoritative. In particular:
 

@@ -12,6 +12,8 @@ Public-preview hardening:
 - make regex guards check changed lines by default, with optional whole-file scope;
 - delete successful quiet-run logs by default and add optional timeout support;
 - add Agent Skills metadata, OpenAI UI metadata, MIT license, helper tests, and behavior eval scenarios.
+- add public release docs, examples, contribution/security guidance, GitHub templates, and CI.
+- fix nested Flutter/RN manifest detection when the caller passes a relative root path.
 
 ## 0.1.0
 

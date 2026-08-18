@@ -261,6 +261,7 @@ def _manifest_platform(directory: Path) -> tuple[bool, bool]:
 
 
 def _candidate_manifest_dirs(root: Path, files: Iterable[str]) -> list[Path]:
+    root = root.resolve()
     dirs = {root}
     for rel in files:
         current = (root / rel).parent.resolve()

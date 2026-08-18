@@ -1,6 +1,6 @@
 interface:
   display_name: "Mobile Efficient Dev"
   short_description: "Token-aware Flutter and React Native workflow"
-  default_prompt: "Use $mobile-efficient-dev to implement this mobile change with minimum sufficient context and verification."
+  default_prompt: "Use $mobile-development-skills to implement this mobile change with minimum sufficient context and verification."
 policy:
   allow_implicit_invocation: true

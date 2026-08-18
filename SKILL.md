@@ -1,5 +1,5 @@
 ---
-name: mobile-efficient-dev
+name: mobile-development-skills
 description: Develop Flutter and React Native apps with minimum sufficient context and verification. Use for implementation, fixes, refactors, UI, state, navigation, dependencies, native config, builds, tests, or post-change checks when you want to reduce agent token/tool overhead without weakening repository rules. Classify risk, load only relevant rules, batch edits, and escalate checks only when evidence requires it. Do not use for non-Flutter/non-React-Native repositories.
 license: MIT
 compatibility: Agent Skills-compatible coding agent. Bundled scripts require Python 3.9+; Git is recommended for change detection. Uses the target repository's existing Flutter/FVM or React Native/Expo toolchain rather than installing its own mobile dependencies.

@@ -22,7 +22,7 @@ ERROR_RE = re.compile(
 
 def log_dir_for(cwd: Path) -> Path:
     key = hashlib.sha1(str(cwd).encode("utf-8")).hexdigest()[:10]
-    path = Path(tempfile.gettempdir()) / "mobile-efficient-dev" / key / "logs"
+    path = Path(tempfile.gettempdir()) / "mobile-development-skills" / key / "logs"
     path.mkdir(parents=True, exist_ok=True)
     return path
 
