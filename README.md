@@ -1,5 +1,7 @@
 # mobile-development-skills
 
+[![tests](https://github.com/asiriPiyajanaka/mobile-development-skills/actions/workflows/tests.yml/badge.svg)](https://github.com/asiriPiyajanaka/mobile-development-skills/actions/workflows/tests.yml)
+
 A token/context-aware development workflow skill for **Flutter and React Native / Expo** coding agents.
 
 It is designed to reduce unnecessary model-visible context, command output, repeated verification, and builds while preserving repository rules and risk-appropriate checks.
